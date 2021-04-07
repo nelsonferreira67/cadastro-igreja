@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <style type="text/css">
+            @import url("estilo.css");
+        </style>
+        <title>Pagina Pesquisar</title>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function val_Campo(){
+                if (document.frm_buscar.nomeBusca.value === ""){
+                
+                    alert("Preencha o Campo de Pesquisa!");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+         <div id="titulo">
+            <img src="logoieqflowers.png" align=" middle"><br><p id="cabecalho">Cadastro GMM Catedral dos Nobres</p>        
+        </div>
+        <br>
+        <center>
+            <br/>
+            <h3> Bem Vindo à Página de Pesquisa</h3>
+            <br/>
+            <p>Digite abaixo no campo "Procurar" o nome completo ou a primeira letra do nome do membro desejado;</p>
+            <br/>
+        <div>
+            <form method="POST" action="pesquisar.php" name="frm_buscar">
+                <input name="pesquisar" type="submit" id="pesquisar" value="Procurar" onclick = " return val_Campo();"/> 
+            <input type="text" name="nomeBusca" id="nomeBusca" size="45" maxlength="60">
+            </form>
+            <br/>
+            <br/>
+            <a href="index.php">Página Inicial</a>
+            <br/>
+            <br/>
+            <a href="cadastro_listar.php">Lista de Membros</a>
+        </div>
+        </center>
+    
+        
+       
+    </body>
+</html>

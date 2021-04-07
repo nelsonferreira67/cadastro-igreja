@@ -1,0 +1,41 @@
+body {
+background-color: #EE82EE;
+
+ color:#4B0082;
+}
+#tabela{
+    width:425px;
+    border:10px;
+}
+
+p{
+    text-align: center;
+}
+#titulo{
+    text-align: center;
+}
+#cabecalho{
+    
+    font-family: Book Old Style;
+    font-size: 24px;
+    color: #4B0082;
+}
+#primeiro{
+    
+     width:auto;
+     height: 470px;  
+}
+#segundo{
+    
+     width:auto;
+     height: 470px;  
+}
+input{
+    color:#003366;
+}
+li{
+    color:#330033;
+}
+select{
+    color:#003366;
+}
